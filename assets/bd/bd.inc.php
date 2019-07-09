@@ -6,9 +6,9 @@
 // $bdNombre = "copahue_formulario";
 
 $bdServidor = "201.159.170.169";
-$bdUsuario = "laredopa_adm";
-$bdPassword = "ptLvvCNbSp";
-$bdNombre = "laredopa_formulario";
+$bdUsuario = "francisc_formulario";
+$bdPassword = '.5eF+5elQ${I';
+$bdNombre = "francisc_formulario";
 
 $con = mysqli_connect($bdServidor, $bdUsuario, $bdPassword, $bdNombre);
 

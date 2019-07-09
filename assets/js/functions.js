@@ -245,7 +245,7 @@ $(window).scroll(function() {
 
 //
 $("#conoce").click(function() {
-  $("#section2").click();
+  $("#descLink").click();
 });
 
 //Descarga Plantas
