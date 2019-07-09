@@ -1,0 +1,701 @@
+//Font Imports
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue.woff2") format("woff2"),
+    url("../fonts/BebasNeue.woff") format("woff"),
+    url("../fonts/BebasNeue.ttf") format("truetype"),
+    url("../fonts/BebasNeue.svg#BebasNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeueBold.woff2") format("woff2"),
+    url("../fonts/BebasNeueBold.woff") format("woff"),
+    url("../fonts/BebasNeueBold.ttf") format("truetype"),
+    url("../fonts/BebasNeueBold.svg#BebasNeueBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeueLight.woff2") format("woff2"),
+    url("../fonts/BebasNeueLight.woff") format("woff"),
+    url("../fonts/BebasNeueLight.ttf") format("truetype"),
+    url("../fonts/BebasNeueLight.svg#BebasNeueLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeueBook.woff2") format("woff2"),
+    url("../fonts/BebasNeueBook.woff") format("woff"),
+    url("../fonts/BebasNeueBook.ttf") format("truetype"),
+    url("../fonts/BebasNeueBook.svg#BebasNeueBook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff"),
+    url("../fonts/BebasNeueRegular.ttf") format("truetype"),
+    url("../fonts/BebasNeueRegular.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue-Thin.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Thin.woff") format("woff"),
+    url("../fonts/BebasNeue-Thin.ttf") format("truetype"),
+    url("../fonts/BebasNeue-Thin.svg#BebasNeue-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+// Variables
+
+$font-lato: "Lato", sans-serif;
+$font-bebas: "Bebas Neue", sans-serif;
+$c-Oscuro: #000000;
+$c-Medio: #e2001a;
+$c-Claro: #ffffff;
+
+//Globales
+
+.carousel {
+  width: 90%;
+  margin: auto;
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+
+  .slick-prev {
+    left: -50px;
+  }
+  .slick-next {
+    right: -50px;
+  }
+
+  .slick-prev i {
+    font-size: 2rem;
+    color: $c-Claro;
+  }
+  .slick-next i {
+    font-size: 2rem;
+    color: $c-Claro;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.sectionMargin {
+  height: 80px;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0px;
+}
+
+.mensaje-form {
+  overflow: hidden;
+  transition: all 0.5s;
+  font-family: $font-lato;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+// ---- secciones ----
+
+// Home
+
+#home {
+  background: url(../../departamentos/assets/img/bg.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .column {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 3em;
+    &:hover {
+      background-color: rgba(226, 0, 26, 0.8);
+      font-size: 4em;
+    }
+    h1 {
+      margin: auto;
+      color: $c-Claro;
+      font-family: $font-bebas;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Navbar
+
+#nav {
+  background-color: $c-Oscuro;
+  a {
+    color: $c-Claro;
+    font-family: $font-lato;
+    font-weight: bold;
+    font-size: 0.9em;
+    &:hover {
+      color: $c-Medio;
+      background-color: $c-Oscuro;
+    }
+  }
+}
+
+.navbar-end {
+  background-color: $c-Oscuro;
+}
+
+#navbarMenuHeroA {
+  background-color: $c-Oscuro;
+}
+
+.navbar-burger {
+  color: $c-Claro;
+}
+
+// Portada
+
+#portada-deptos {
+  background: url(../../departamentos/assets/img/bg.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#portada-oficinas {
+  background: url(../../oficinas/assets/img/bg.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#section1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  i {
+    color: $c-Claro;
+    padding-bottom: 20px;
+  }
+  h1 {
+    color: $c-Claro;
+    font-family: $font-lato;
+    font-weight: 700;
+    margin-bottom: -7px;
+  }
+}
+
+// Inicio
+
+#section2 {
+  img {
+    position: absolute;
+    margin-top: -35px;
+    padding-left: 32px;
+  }
+  #descripcion {
+    padding-top: 33px;
+    padding-bottom: 30px;
+    p {
+      font-family: $font-lato;
+      font-weight: 400;
+      font-size: 0.8rem;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  #catalogo-download {
+    padding-left: 30px;
+    .button {
+      height: 30px;
+      color: $c-Claro;
+      background-color: rgba(0, 0, 0, 0);
+      font-family: $font-bebas;
+      font-weight: normal;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      border-color: $c-Claro;
+      border-radius: 0px;
+    }
+
+    :hover {
+      color: $c-Medio;
+      border-color: $c-Medio;
+      border-color: $c-Medio;
+    }
+  }
+}
+
+// Entorno
+
+#section3 {
+  #carousel {
+    background-color: $c-Oscuro;
+    h1 {
+      color: $c-Claro;
+      font-family: $font-bebas;
+      font-weight: normal;
+      font-size: 4rem;
+      padding-left: 65px;
+    }
+  }
+  #maps {
+    height: 270px;
+  }
+  #map360 {
+    height: 270px;
+  }
+
+  #waze {
+    .button {
+      border-color: $c-Claro;
+    }
+    #wazeBtn {
+      height: 60px;
+      background-color: #3ad4ff;
+      #waze-logo {
+        height: 40px;
+      }
+    }
+    #abrirConBtn {
+      height: 60px;
+      background-color: #192739;
+      color: $c-Claro;
+      font-family: $font-bebas;
+      font-weight: normal;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+#maps > #waze {
+  opacity: 0.3;
+  position: relative;
+  margin-top: 50px;
+  transition: 0.5s;
+  @media screen and (min-width: 1088px) {
+    margin-top: -70px;
+  }
+}
+#maps > #waze {
+  opacity: 1;
+}
+
+// Proyecto
+
+#section4 {
+  #galeria {
+    background-color: $c-Claro;
+    i {
+      color: $c-Medio;
+    }
+  }
+  .encabezado {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    .arrowRed1 {
+      padding-left: 13px;
+      padding-right: 7px;
+      margin-top: -8px;
+    }
+    .arrowRed2 {
+      padding-right: 6px;
+      margin-top: 6px;
+    }
+    h1 {
+      color: $c-Oscuro;
+      font-family: $font-bebas;
+      font-weight: normal;
+      font-size: 2.5rem;
+    }
+  }
+  .cuerpo {
+    padding-left: 60px;
+    padding-right: 40px;
+    h2 {
+      color: $c-Medio;
+      font-family: $font-lato;
+      font-weight: normal;
+      font-size: 1rem;
+      margin-bottom: 18px;
+    }
+    p {
+      color: $c-Oscuro;
+      font-family: $font-lato;
+      font-weight: 400;
+      font-size: 0.8rem;
+      margin-top: 0px;
+    }
+    .content ul {
+      margin: 0px 0px 0px 15px;
+    }
+    li {
+      color: $c-Oscuro;
+      font-family: $font-lato;
+      font-weight: 400;
+      font-size: 0.8rem;
+      margin-top: 0px;
+      line-height: 1;
+      margin: 0 0 7px 0;
+    }
+  }
+}
+
+.mTitulos {
+  padding-top: 60px;
+}
+
+// Masterplan
+
+#section5 {
+  img {
+    width: 100%;
+  }
+}
+
+// Galería
+
+.galeria {
+  width: 90%;
+  margin: auto;
+  .slick-slide {
+    border: 2px solid $c-Claro;
+  }
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+
+  .slick-prev {
+    left: -50px;
+  }
+  .slick-next {
+    right: -50px;
+  }
+
+  .slick-prev i {
+    font-size: 2rem;
+    color: $c-Medio;
+  }
+  .slick-next i {
+    font-size: 2rem;
+    color: $c-Medio;
+  }
+}
+
+// Plantas
+
+#section6 {
+  h1 {
+    color: $c-Oscuro;
+    font-family: $font-bebas;
+    font-weight: normal;
+    font-size: 4rem;
+  }
+  h2 {
+    color: $c-Medio;
+    font-family: $font-bebas;
+    font-weight: normal;
+    font-size: 1.8rem;
+  }
+  h3 {
+    white-space: nowrap;
+    overflow-x: auto;
+    color: $c-Oscuro;
+    font-family: $font-bebas;
+    font-weight: normal;
+    font-size: 1.2rem;
+    div {
+      display: inline-block;
+    }
+    span {
+      color: $c-Medio;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+  }
+  h5 {
+    color: $c-Oscuro;
+    font-family: $font-lato;
+    font-size: 1rem;
+  }
+  .metraje {
+    font-weight: 700;
+  }
+  .btn-download {
+    .button {
+      color: $c-Oscuro;
+      font-family: $font-bebas;
+      font-weight: normal;
+      font-size: 1.5rem;
+      border-color: $c-Oscuro;
+      border-radius: 0px;
+    }
+    :hover {
+      color: $c-Medio;
+      border-color: $c-Medio;
+      border-color: $c-Medio;
+    }
+  }
+
+  .selectedPlanta {
+    outline: 1px solid $c-Medio;
+    outline-offset: -4px;
+  }
+}
+
+// Cotizar
+
+#section7 {
+  #formulario-deptos {
+    background: url(../../departamentos/assets/img/cotizar-bg.jpg) no-repeat
+      center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #formulario-oficinas {
+    background: url(../../oficinas/assets/img/cotizar-bg.jpg) no-repeat center
+      center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  h1 {
+    color: $c-Claro;
+    font-family: $font-bebas;
+    font-weight: normal;
+    font-size: 2.5rem;
+  }
+  h2 {
+    color: $c-Claro;
+    font-family: $font-lato;
+    font-weight: normal;
+    font-size: 1rem;
+    padding-bottom: 20px;
+    margin-top: -10px;
+  }
+  #formulario {
+    label {
+      font-family: $font-lato;
+      font-weight: normal;
+      font-size: 1rem;
+      color: $c-Medio;
+    }
+    #enviar {
+      .button {
+        height: 45px;
+        color: $c-Claro;
+        background-color: rgba(0, 0, 0, 0);
+        font-family: $font-bebas;
+        font-weight: normal;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        border-color: $c-Claro;
+        border-radius: 0px;
+      }
+      :hover {
+        color: $c-Medio;
+        border-color: $c-Medio;
+        border-color: $c-Medio;
+      }
+    }
+    span {
+      color: $c-Claro;
+      font-family: $font-lato;
+      font-weight: normal;
+      font-size: 1.2rem;
+      width: 100%;
+      height: 30px;
+      padding: 0px 0px 0px 10px;
+      display: block;
+    }
+    .select {
+      width: 100%;
+      border-bottom: 1px solid rgb(177, 177, 177);
+      height: 30px;
+      select {
+        height: 30px;
+        padding: 0px 0px 0px 10px;
+        border-radius: 0px;
+        border: 0;
+        outline: 0;
+        width: 100%;
+        color: $c-Claro;
+        font-family: $font-lato;
+        font-weight: normal;
+        font-size: 1.2rem;
+        background: transparent;
+        .option {
+          background-color: $c-Oscuro;
+          color: $c-Claro;
+          :hover {
+            background-color: $c-Medio;
+          }
+        }
+      }
+    }
+    .select:not(.is-multiple):not(.is-loading)::after {
+      border-color: rgb(177, 177, 177);
+    }
+    #comentarios {
+      -webkit-appearance: none;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      border: 1px solid rgb(177, 177, 177);
+      width: 100%;
+      padding-top: 10px;
+      color: $c-Claro;
+      font-family: $font-lato;
+      font-weight: normal;
+      font-size: 1.2rem;
+      padding: 0px 0px 10px 10px;
+    }
+    .input-class {
+      -webkit-appearance: none;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      border-bottom: 1px solid rgb(177, 177, 177);
+      width: 100%;
+      height: 30px;
+      padding-top: 10px;
+      color: $c-Claro;
+      font-family: $font-lato;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 0px 0px 0px 10px;
+      &::placeholder {
+        color: $c-Claro;
+        font-family: $font-lato;
+        font-weight: normal;
+        font-size: 1.2rem;
+      }
+      &:focus::placeholder {
+        color: rgb(121, 121, 121);
+      }
+    }
+  }
+}
+
+// Copahue - footer
+
+.footer {
+  background-color: $c-Oscuro;
+  .column {
+    padding: 5px 10px;
+  }
+  h1 {
+    color: $c-Claro;
+    font-family: $font-bebas;
+    font-weight: normal;
+    font-size: 2.5rem;
+  }
+  .lvRazones {
+    height: 30px;
+    margin: 0px;
+    background-color: $c-Medio;
+    img {
+      height: 20px;
+      padding-right: 5px;
+      @media screen and (max-width: 768px) {
+        margin-top: 5px;
+      }
+    }
+    h3 {
+      color: $c-Claro;
+      font-family: $font-lato;
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding-left: 5px;
+      padding-top: 9px;
+    }
+    .no-pad-sides {
+      padding-left: 0px;
+      padding-top: 8px;
+    }
+  }
+  #logo-copahue {
+    width: 150px;
+    margin: auto;
+  }
+  a {
+    color: $c-Claro;
+    font-family: $font-lato;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+  h4 {
+    color: $c-Claro;
+    font-family: $font-lato;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+}
+
+// ---- fin secciones ----
+
+@media only screen and (max-width: 769px) {
+  #home {
+    #deptos-col {
+      background-color: rgba(226, 0, 26, 0.8);
+    }
+    #ofis-col {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    }
+    .column {
+      height: 50vh;
+    }
+  }
+}
