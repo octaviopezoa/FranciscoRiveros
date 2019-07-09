@@ -132,7 +132,7 @@ body {
 // Home
 
 #home {
-  background: url(../../departamentos/assets/img/bg.jpg) no-repeat center center
+  background: url(../assets/img/header.jpg) no-repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -190,7 +190,7 @@ body {
 // Portada
 
 #portada-deptos {
-  background: url(../../departamentos/assets/img/bg.jpg) no-repeat center center
+  background: url(../img/header.jpg) no-repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -198,14 +198,6 @@ body {
   background-size: cover;
 }
 
-#portada-oficinas {
-  background: url(../../oficinas/assets/img/bg.jpg) no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 #section1 {
   background-color: rgba(0, 0, 0, 0.6);
@@ -492,7 +484,7 @@ body {
 
 #section7 {
   #formulario-deptos {
-    background: url(../../departamentos/assets/img/cotizar-bg.jpg) no-repeat
+    background: url(../img/footer.jpg) no-repeat
       center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
